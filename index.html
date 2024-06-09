@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- ===== CSS ===== -->
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+        <script src="https://unpkg.com/@phosphor-icons/web"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+        <!-- ===== BOX ICONS ===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <title>Login</title>
+        <script>
+            var nome = 'Amor';
+            var num = 'Eu te amo';
+    
+            function confirmarlogin(){
+                login = document.cd.login.value;
+                senha = document.cd.senha.value;
+    
+                if((nome == login) && (num == senha)){
+                    window.location = "page.html"
+                }
+                else{
+                    window.location = "page-01.html"
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div class="login">
+            <div class="login__content">
+                <div class="login__forms">
+                    <form action="" class="login__registre" id="login-in" name="cd">
+                        <h1 class="login__title">Login</h1>
+    
+                        <div class="login__box">
+                            <i class='bx bx-user login__icon'></i>
+                            <input type="text" placeholder="Nome" class="login__input" name="login">
+                        </div>
+                            <br>
+                        <div class="login__box">
+                            <i class='bx bx-lock-alt login__icon'></i>
+                            <input type="password" placeholder="Senha" class="login__input" name="senha">
+                        </div>
+
+                        <div class="info">
+                            <p id="info-p">Esqueceu a senha?</p>
+                            <i id="info-icon">asd</i>
+                          </div>
+                          
+                        <a href="#" class="login__button" onclick="confirmarlogin()">Entrar</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/script.js"></script>
+    </body>
+</html>
